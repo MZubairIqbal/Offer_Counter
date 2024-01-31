@@ -8,6 +8,8 @@
 }
 :root {
   --txt-color: #fff;
+  --txt-red: #d91a1a;
+  --bg-yellow: #fbb901;
 }
 html {
   font-size: 62.5%;
@@ -24,10 +26,11 @@ body {
   cursor: default;
   user-select: none;
   border-radius: 1.5rem;
-  background: #c51a1b;
+  background: transparent;
   min-width: 30rem;
   min-height: 20rem;
   overflow: hidden;
+  transition: all ease 1s;
 }
 .hero:hover {
   background: #d91a1a;
@@ -39,13 +42,14 @@ body {
 }
 .counterHeading h2 {
   /* background: greenyellow; */
+  color: var(--txt-red);
   font-size: 3.5rem;
   font-weight: 750;
   line-height: 1.5;
   text-align: center;
 }
 .counterHeading .bannerBtn {
-  background: linear-gradient(to top right, #c9ddf3, #6666d8);
+  background: var(--bg-yellow);
   position: absolute;
   top: 7px;
   right: -40px;
@@ -53,20 +57,27 @@ body {
   padding: 0.25rem 4rem;
   padding-bottom: 0.5rem;
   transform: rotate(45deg);
-  box-shadow: 1px 1px 3px #000;
 }
 .counterHeading .bannerBtn:hover {
   cursor: pointer;
 }
+.hero:hover .counterHeading .bannerBtn {
+  background: linear-gradient(to top right, #c9ddf3, #6666d8);
+  box-shadow: 1px 1px 3px #000;
+}
 .bannerBtn p {
   text-align: center;
-  color: #000;
+  color: #6d0f0f;
   font-weight: 700;
 }
 .bannerBtn a {
   text-align: center;
   font-size: 1.2rem;
   font-weight: 800;
+  color: #6d0f0f;
+}
+.hero:hover .bannerBtn p,
+.hero:hover .bannerBtn a {
   color: #000;
 }
 .counterMain {
@@ -88,9 +99,14 @@ body {
 }
 .counterMain > div span {
   text-align: center;
+  color: var(--txt-red);
+}
+.hero:hover .counterHeading h2,
+.hero:hover .counterMain > div span,
+.hero:hover .counterFooter {
+  color: var(--txt-color);
 }
 .counterMain > div .ref {
-  color: #f4eeeec7;
   font-size: 1.3rem;
   font-weight: 600;
   display: block;
@@ -98,6 +114,7 @@ body {
 
 .counterFooter {
   /* border: 2px solid yellow; */
+  color: var(--txt-red);
   border-top: 2px solid rgba(255, 255, 255, 0.32);
   font-size: 1.8rem;
   font-weight: 700;
