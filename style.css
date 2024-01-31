@@ -20,20 +20,24 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: url(bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .hero {
   /* border: 2px solid blue; */
   cursor: default;
   user-select: none;
   border-radius: 1.5rem;
-  background: transparent;
+  background: var(--txt-red);
   min-width: 30rem;
   min-height: 20rem;
   overflow: hidden;
   transition: all ease 1s;
 }
 .hero:hover {
-  background: var(--bg-yellow);
+  background: red;
 }
 .counterHeading {
   /* border: 2px solid green; */
@@ -42,7 +46,7 @@ body {
 }
 .counterHeading h2 {
   /* background: greenyellow; */
-  color: var(--txt-red);
+  color: var(--txt-color);
   font-size: 3.5rem;
   font-weight: 750;
   line-height: 1.5;
@@ -63,7 +67,7 @@ body {
   cursor: pointer;
 }
 .hero:hover .counterHeading .bannerBtn {
-  background: linear-gradient(to top right, #c9ddf3, #6666d8);
+  background: linear-gradient(to top right, #ffea00, #dec81e);
   box-shadow: 1px 1px 3px #000;
 }
 .bannerBtn p {
@@ -100,12 +104,12 @@ body {
 }
 .counterMain > div span {
   text-align: center;
-  color: var(--txt-red);
+  color: var(--txt-color);
 }
 .hero:hover .counterHeading h2,
 .hero:hover .counterMain > div span,
 .hero:hover .counterFooter {
-  color: var(--txt-red);
+  color: var(--txt-color);
 }
 .counterMain > div .ref {
   font-size: 1.3rem;
@@ -115,7 +119,7 @@ body {
 
 .counterFooter {
   /* border: 2px solid yellow; */
-  color: var(--txt-red);
+  color: var(--txt-color);
   border-top: 2px solid rgba(255, 255, 255, 0.32);
   font-size: 1.8rem;
   font-weight: 700;
