@@ -33,7 +33,7 @@ body {
   transition: all ease 1s;
 }
 .hero:hover {
-  background: #d91a1a;
+  background: var(--bg-yellow);
 }
 .counterHeading {
   /* border: 2px solid green; */
@@ -57,6 +57,7 @@ body {
   padding: 0.25rem 4rem;
   padding-bottom: 0.5rem;
   transform: rotate(45deg);
+  box-shadow: 1px 1px 3px #000;
 }
 .counterHeading .bannerBtn:hover {
   cursor: pointer;
@@ -104,7 +105,7 @@ body {
 .hero:hover .counterHeading h2,
 .hero:hover .counterMain > div span,
 .hero:hover .counterFooter {
-  color: var(--txt-color);
+  color: var(--txt-red);
 }
 .counterMain > div .ref {
   font-size: 1.3rem;
