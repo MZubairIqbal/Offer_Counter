@@ -30,7 +30,7 @@ body {
   min-width: 30rem;
   min-height: 20rem;
   overflow: hidden;
-  transition: all ease 1s;
+  transition: all ease 0.7s;
 }
 .hero:hover {
   background: #d91a1a;
